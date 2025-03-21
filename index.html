@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CV</title>
+	<link href="https://fonts.googleapis.com/css2?family=Agdasima&display=swap" rel="stylesheet"> <!-- Enlace font Agdasima-->
+	<link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Inter:wght@300;400;600&display=swap" rel="stylesheet"> <!-- Enlace font Inter-->
+	<link rel="stylesheet" href="css/styles1.css" /> <!-- Enlace css -->
+	<script defer src="js/script1.js"></script> <!-- Enlace script -->
+</head>
+
+<body>
+
+	<!-- Menu navegación -->
+	<header class="home">
+		<nav class="barra_navegacion">
+			<a href="#home">HOME</a>
+			<a href="#portfolio">PORTFOLIO</a>
+			<a href="#curriculum">CURRÍCULUM</a>
+			<a href="#sobre_mi">SOBRE MÍ</a>
+			<a href="#contacto">CONTACTO</a>
+		</nav>
+	</header>
+
+	<!-- Sección Home -->
+	<section class="hero" id="home">
+		<h1>Hola, soy <br> Roberto G. Ponzetti</h1>
+		<p>Web Developer</p>
+	</section>
+
+	<!-- Sección Portafolio -->
+	<section class="menu" id="portfolio">
+		<div class="text">PORTFOLIO</div>
+		<div class="overlap">
+			<div class="pestanas">
+				<div class="MENU">
+					<button class="tab_button" data-tab="trabajos">TRABAJOS</button>
+					<button class="tab_button" data-tab="fotos">FOTOS</button>
+					<button class="tab_button" data-tab="videos">VIDEOS</button>
+				</div>
+			</div>
+			<div class="contenido">
+				<div id="trabajos" class="contenido_tab">Contenido de Trabajos</div>
+				<div id="fotos" class="contenido_tab" style="display:none;">Contenido de Fotos</div>
+				<div id="videos" class="contenido_tab" style="display:none;">Contenido de Videos</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Sección Currículum -->
+	<section class="menu" id="curriculum">
+		<div class="text">CURRÍCULUM</div>
+		<div class="frame">
+			<div class="educacion">
+				<h2 class="texto_educacion">EDUCACIÓN</h2>
+				<p class="p">Grado Superior en Desarrollo de Aplicaciones Web
+					(DAW) – 2023-Actualidad<br><br>
+					Certificaciones:<br>
+					Cisco CCST (Cybersecurity Certification)<br>
+					English for IT (B1)<br><br>
+					Ilustración y Diseño Digital – 2020-2021<br><br>
+					Técnico Superior en Quiromasaje y Osteopatía – 2016-
+					2018<br><br>
+					Grado Superior de Actividades Físicas y Deportivas –
+					2012-2014</p>
+			</div>
+			<div class="experiencia">
+				<h2 class="texto_experiencia">EXPERIENCIA</h2>
+				<p class="p2"><strong>EXPERIENCIA PREVIA EN SECTORES NO TECNOLOGICOS<br><br></strong>
+					Polo Ralph Lauren - Support Associate (2024 - Actualidad)<br><br>
+					Decathlon - Sales Associate (2023 - 2024)<br><br>
+					The North Face - Sales Associate (2022 - 2023)<br><br>
+					Profesional del tatuaje e ilustración freelance (2018 - 2023)<br><br>
+					Masaje y Osteópatia freelance (2016 - 2018)<br><br>
+					Rockgym - Sales Assistant/ Personal trainer (2015 - 2021)<br><br>
+					Holiday Gym - Sales Assistant/ Personal trainer (2014 - 2015)</p>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- Sección Sobre Mí -->
+	<section class="menu" id="sobre_mi">
+		<div class="text">SOBRE MÍ</div>
+		<div class="contenido_sobre_mi">
+			<div class="recuadro_img">
+				<img class="img" src="assets/img/fotomia.JPG" alt="Imagen" />
+			</div>
+			<div class="contenido_texto">
+				<p class="texto_relleno_sobre_mi">
+					Roberto García Ponzetti es un desarrollador web en formación con experiencia en tecnologías como
+					JavaScript,
+					PHP y bases de datos. Actualmente, está finalizando sus estudios en Desarrollo de Aplicaciones Web
+					(DAW) y ha
+					trabajado en proyectos que combinan frontend y backend, así como en la integración de sistemas de
+					domótica y
+					ciberseguridad. Su enfoque está en la creación de plataformas interactivas y funcionales, con
+					especial interés
+					en la seguridad informática y la optimización del rendimiento web.
+				</p>
+			</div>
+		</div>
+
+	</section>
+
+
+	<!-- Sección Contacto -->
+	<section class="menu" id="contacto">
+		<div class="text">CONTACTO</div>
+
+		<div class="contenedor_contacto">
+			<!-- Columna de descarga CV -->
+			<div class="columna">
+				<div class="texto_enviame">DESCARGAR MI CV</div><br>
+				<a href="assets/pdf/CvRobertoGarciaPonzetti.pdf" download class="cv-link">Descargar mi CV</a>
+			</div>
+			
+
+			<!-- Columna de contacto -->
+			<div class="columna">
+				<div class="texto_mi_contacto">MI CONTACTO</div><br>
+				<div class="datos">
+					<p><strong>EMAIL</strong><br> roberto25894@hotmail.com</p><br>
+					<p><strong>TELEFONO</strong><br> +34 610 950 086</p><br>
+					<p><strong>LOCALIZACIÓN</strong><br> Madrid</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Pie de página -->
+	<footer class="footer">
+		<div class="frame2">
+			<a href="https://github.com/RobbieDesign" target="_blank">
+				<img class="icono1" src="assets/img/github-mark-white.png" alt="GitHub" />
+			</a>
+			<a href="https://www.linkedin.com/in/robertogarciaponzetti" target="_blank">
+				<img class="icono2" src="assets/img/LinkedIn_logo_initials.png" alt="LinkedIn" />
+			</a>
+		</div>
+	</footer>
+</body>
+
+</html>
