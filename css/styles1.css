@@ -245,13 +245,9 @@ button:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .contenedor_contacto {
-    flex-direction: column;
-    align-items: center;
-  }
-  .frame {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  .contenedor_contacto, .frame {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
+
