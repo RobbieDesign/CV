@@ -245,9 +245,111 @@ button:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
-  .contenedor_contacto, .frame {
-    flex-wrap: wrap;
-    justify-content: center;
+  body {
+    padding-top: 100px; /* Ajusta este valor según la altura del header */
   }
+
+  /* --- Barra de navegación --- */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black; /* Fondo sólido */
+    padding: 10px 0;
+    z-index: 1000;
+  }
+
+  .barra_navegacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .barra_navegacion a {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+
+  /* --- Hero --- */
+  .hero {
+    font-size: 1.5rem;
+    background-size: cover;
+    background-position: center;
+    height: 80vh; /* Reduce la altura en móviles */
+    padding: 20px;
+  }
+  .img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 100px; /* Más separación desde el contenido anterior */
+    padding-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  /* --- Sección "Sobre mí" --- */
+  .contenido_sobre_mi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px; /* Espaciado entre elementos */
+    width: 100%;
+    min-height: 500px; /* Asegura que haya suficiente altura */
+    margin-top: 100px; /* Más separación desde el contenido anterior */
+    padding-top: 50px;
+    margin-bottom: 10px;
+  }
+
+  /* --- Contacto --- */
+  .contenedor_contacto {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 100%;
+    min-height: 400px; /* Asegura que haya suficiente altura */
+    margin-top: 100px; /* Evita que se solape con "Sobre mí" */
+    padding-top: 50px;
+  }
+
+  /* --- Experiencia y Educación --- */
+  .frame {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 40px;
+  }
+
+  .educacion {
+    width: 100%;
+  }
+  
+  .experiencia {
+    margin-top: 10px; /* Evita que se solape con "Sobre mí" */
+    padding-top: 20px;
+    width: 100%;
+    margin-bottom: 120px;
+  }
+  .menu {
+    width: 100%;
+    margin-bottom: 100px;
+  }
+
+  /* --- Botones y texto --- */
+  button, .tab_button {
+    font-size: 1rem;
+    padding: 8px 20px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
 }
 
