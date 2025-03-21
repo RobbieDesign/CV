@@ -1,0 +1,257 @@
+/* Agdasima a h1, h2, h3, a, botones */
+h1, h2, h3, a, button {
+  font-family: 'Agdasima', sans-serif;
+}
+
+/* Inter a los párrafos y titulo de hero */
+.hero h1, p {
+  font-family: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Agdasima', sans-serif;
+  background-color: black;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Barra de navegación y encabezado */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+.barra_navegacion {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.barra_navegacion a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.barra_navegacion a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones generales */
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* Hero */
+.hero {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  background: url('../assets/img/fotomia.JPG') no-repeat center center/cover;
+  color: white;
+  height: 100vh; /* Asegura que la imagen ocupe toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Menú */
+.menu {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Pestañas */
+.text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pestanas {
+  margin-bottom: 20px;
+}
+
+.tab_button {
+  padding: 10px;
+  margin: 0 10px;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.tab_button:hover {
+  text-decoration: underline;
+}
+
+.contenido_tab {
+  display: none;
+}
+
+.contenido_tab.active {
+  display: block;
+}
+
+/* Sobre mí */
+.contenido_sobre_mi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 500px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contenido_texto {
+  flex: 1;
+  text-align: center;
+}
+
+.recuadro_img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Contacto */
+.contenedor_contacto {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 500px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.columna {
+  text-align: left;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 150%;
+  padding: 10px;
+  margin: 10px 0;
+  background: #939393;
+}
+
+.texto_enviame, 
+.texto_mi_contacto {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.datos {
+  text-align: center;
+}
+
+.cv-link {
+  display: inline-block;
+  background-color: #939393; /* Color azul, puedes cambiarlo */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cv-link:hover {
+  background-color: #666; /* Color más oscuro al pasar el mouse */
+}
+
+
+/* Educación y Experiencia */
+.frame {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.educacion, .experiencia {
+  flex: 1;
+  text-align: center;
+}
+
+.p, .p2 {
+  margin-top: 10px;
+}
+
+/* Logos */
+.frame2 {
+  display: flex;
+  justify-content: center;
+  gap: 50px; /* Reduce el espacio entre los logos */
+  align-items: center;
+}
+
+.icono1,
+.icono2 {
+  max-width: 100px; /* Ajusta el tamaño máximo de los iconos */
+  max-height: 100px; /* Evita que sean demasiado grandes */
+  width: auto;
+  height: auto;
+}
+
+
+/* Botones */
+button {
+  padding: 10px 40px;
+  background: #444;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenedor_contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .frame {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
