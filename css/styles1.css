@@ -64,7 +64,7 @@ section {
   text-align: center;
   background: url('../assets/img/fotomia.JPG') no-repeat center center/cover;
   color: white;
-  height: 100vh; /* Asegura que la imagen ocupe toda la pantalla */
+  height: 100vh; 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,7 +181,7 @@ section {
 
 .cv-link {
   display: inline-block;
-  background-color: #939393; /* Color azul, puedes cambiarlo */
+  background-color: #939393; 
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -191,7 +191,7 @@ section {
 }
 
 .cv-link:hover {
-  background-color: #666; /* Color más oscuro al pasar el mouse */
+  background-color: #666; 
 }
 
 
@@ -217,14 +217,14 @@ section {
 .frame2 {
   display: flex;
   justify-content: center;
-  gap: 50px; /* Reduce el espacio entre los logos */
+  gap: 50px; 
   align-items: center;
 }
 
 .icono1,
 .icono2 {
-  max-width: 100px; /* Ajusta el tamaño máximo de los iconos */
-  max-height: 100px; /* Evita que sean demasiado grandes */
+  max-width: 100px; 
+  max-height: 100px; 
   width: auto;
   height: auto;
 }
@@ -246,7 +246,7 @@ button:hover {
 /* Responsive */
 @media (max-width: 768px) {
   body {
-    padding-top: 100px; /* Ajusta este valor según la altura del header */
+    padding-top: 100px; 
   }
 
   /* --- Barra de navegación --- */
@@ -255,7 +255,7 @@ button:hover {
     top: 0;
     left: 0;
     width: 100%;
-    background: black; /* Fondo sólido */
+    background: black; 
     padding: 10px 0;
     z-index: 1000;
   }
@@ -277,14 +277,14 @@ button:hover {
     font-size: 1.5rem;
     background-size: cover;
     background-position: center;
-    height: 80vh; /* Reduce la altura en móviles */
+    height: 80vh; 
     padding: 20px;
   }
   .img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-top: 100px; /* Más separación desde el contenido anterior */
+    margin-top: 100px; 
     padding-top: 50px;
     margin-bottom: 10px;
   }
@@ -295,10 +295,10 @@ button:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 20px; /* Espaciado entre elementos */
+    gap: 20px; 
     width: 100%;
-    min-height: 500px; /* Asegura que haya suficiente altura */
-    margin-top: 100px; /* Más separación desde el contenido anterior */
+    min-height: 500px; 
+    margin-top: 100px; 
     padding-top: 50px;
     margin-bottom: 10px;
   }
@@ -309,12 +309,12 @@ button:hover {
     align-items: center;
     gap: 20px;
     max-width: 100%;
-    min-height: 400px; /* Asegura que haya suficiente altura */
-    margin-top: 100px; /* Evita que se solape con "Sobre mí" */
+    min-height: 400px; 
+    margin-top: 100px; 
     padding-top: 50px;
   }
 
-  /* --- Experiencia y Educación --- */
+  
   .frame {
     flex-direction: column;
     align-items: center;
@@ -327,7 +327,7 @@ button:hover {
   }
   
   .experiencia {
-    margin-top: 10px; /* Evita que se solape con "Sobre mí" */
+    margin-top: 10px; 
     padding-top: 20px;
     width: 100%;
     margin-bottom: 120px;
@@ -336,6 +336,21 @@ button:hover {
     width: 100%;
     margin-bottom: 100px;
   }
+  .contenido_sobre_mi, .contenedor_contacto, .experiencia, .educacion, .menu {
+      width: 90%;
+      max-width: 100%;
+      margin: 0 auto; /
+      text-align: center; 
+      padding-left: 0; 
+      padding-right: 0;
+    }
+  
+
+  .frame {
+      width: 90%;
+      margin: 0 auto;
+      text-align: center;
+    }
 
   /* --- Botones y texto --- */
   button, .tab_button {
